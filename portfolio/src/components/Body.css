@@ -1,0 +1,26 @@
+.social-media-desktop-a{
+    display: flex;
+    flex-direction: column;
+    width: 41px;
+    height: 130px;
+    gap: 16px;
+    padding: 10px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 24px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    position: relative;
+    top: 145px;
+    left: 16px;
+
+}
+.logo-s{
+    width: 20px;
+    height: 20px;
+}
+.main-class{
+    background-color: #56f1a6;
+    height: 500px;
+}
