@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Header.css";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);
@@ -38,12 +38,15 @@ const Header = () => {
         </div>
         <div className="social-media">
           <div className="hamburger-menu">
-            <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
+            <Link to="#" onClick={() => setShowMediaIcons(!showMediaIcons)} >
               <GiHamburgerMenu />
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
+
+      {/* ..................... NAV BAR COMPLETED   */}
+      
     </>
   );
 };
