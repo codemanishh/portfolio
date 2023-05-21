@@ -26,10 +26,10 @@ const Header = () => {
               <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <NavLink to="/Projects">Projects</NavLink>
+              <a href="#projects">Projects</a>
             </li>
             <li>
-              <NavLink to="/about">About me</NavLink>
+              <a href="#about" style={{scrollBehavior: 'smooth'}}>About me</a>
             </li>
             <li>
               <NavLink to="/contact">contact</NavLink>
@@ -46,7 +46,6 @@ const Header = () => {
       </nav>
 
       {/* ..................... NAV BAR COMPLETED   */}
-      
     </>
   );
 };

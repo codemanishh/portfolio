@@ -1,0 +1,21 @@
+.skill-div{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    background-color: #18191e;
+}
+.skill-img{
+width: 34px;
+}
+
+.skill-name{
+font-size: 14px;
+    font-weight: bolder;
+    color:#ffffff;
+}
+
+.skill-level{
+    font-size: 10px;
+    color: rgb(209 213 219);
+
+}
