@@ -17,6 +17,7 @@
   position: fixed;
   margin-left: 20px;
   margin-top: 227px;
+  z-index: 10;
 }
 .logo-s {
   width: 20px;
@@ -258,22 +259,18 @@
 
 .project-all {
   background-color: #18191e;
+  padding: 50px;
 }
 .neww1 {
   background-color: #18191e;
   height: 1000px;
 }
-.project-all {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 70px;
-}
+
 
 .parenttoall {
   background: #18191e;
   position: relative;
+
 }
 .box-main {
   display: flex;
@@ -303,5 +300,20 @@
   .new-card{
     position: absolute;
     top: 91px;
-    left: 253px;
+    left: 172px;
+    width: 378px;
+    color:#000000;
+   
+    backdrop-filter: blur(10px); background-color: rgba(255, 255, 255, 1); border-radius: 20px; box-shadow: 35px 35px 68px 0px rgba(145, 192, 255, 0.5), inset -4px -4px 16px 0px rgba(145, 192, 255, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
+    padding: 23px;
+  }
+  .new-card2{
+    position: absolute;
+    top: 392px;
+    right: 172px;
+    width: 378px;
+    color:#000000;
+   
+    backdrop-filter: blur(10px); background-color: rgba(255, 255, 255, 1); border-radius: 20px; box-shadow: 35px 35px 68px 0px rgba(145, 192, 255, 0.5), inset -4px -4px 16px 0px rgba(145, 192, 255, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
+    padding: 23px;
   }

@@ -45,15 +45,24 @@ form {
       color: white;
       border: none;
     }
-  .new-contact{
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    background-color: #18191e;
-    color: #afaafb;
-  }
-  .div1-contact{
-    grid-area: 2 / 2 / 5 / 5;
-  }
+
+
+
+.new-contact {
+display: grid;
+grid-template-columns: .1fr .5fr 1fr .1fr;
+grid-template-rows: .1fr .4fr .1fr 1fr .1fr;
+grid-column-gap: 60px;
+grid-row-gap: 9px;
+background-color:#18191e ;
+color: #ffffff;
+}
+
+.contact1 {
+  display: grid;
+  grid-area: 2 / 2 / 3 / 4;
+justify-content: center;
+text-align: center;
+}
+.contact2 { grid-area: 4 / 2 / 5 / 3; }
+.contact3 { grid-area: 4 / 3 / 5 / 4; }

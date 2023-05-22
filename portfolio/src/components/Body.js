@@ -6,6 +6,7 @@ import img2 from '../image/main-style-1.png'
 import img3 from '../image/NW.png'
 import img4 from '../image/line.png'
 import img5 from '../image/education.png'
+import img6 from '../image/AILWING.png'
 import Ocard from './SlillCards/O_Cards.jsx'
 import O_carddata from './SlillCards/O_CardsData'
 import Bcard from './SlillCards/B_Cards'
@@ -122,18 +123,67 @@ const Body = () => {
         </div>
       </div>
       <div id='projects' className='project-all'>
-        <Cardd details={carddata} />
-        <Cardd details={carddata} />
-        <Cardd details={carddata} />
-        <Cardd details={carddata} />
-        <Cardd details={carddata} />
-        <Cardd details={carddata} />
-        <Cardd details={carddata} />
-        <Cardd details={carddata} />
-        <Cardd details={carddata} />
-        <Cardd details={carddata} />
+        <div className='proj-new'>
+          <Cardd details={carddata} />
+
+        </div>
+      </div>
+{/* ...................  EDUACTION --------------------------   */}
+      <div className='about-me' id='about'>
+        <span>Education</span>
+        <div><img className='line' src={img4} alt="newimg" />
+        </div>
       </div>
 
+
+
+      <div className='parenttoall'>
+        <div className='box-main'>
+          <div className="box" style={{ background: 'white' }}></div>
+        </div>
+        {/* ..... image .....  */}
+        <div className='box-main1'>
+          <img className='line' src={img5} alt="newimg" />
+        </div>
+        {/* .....  cards  */}
+        <div className="new-card" >
+          <h2>Dayananda Sagar Institutions -Bangalore</h2>
+          <h3>B.E. Information Technology | 2020 - 2024</h3>
+          <ul >
+            <li style={{ listStyle: "circle" }}>Pursuing IT Engineering course from Dayananda Sagar Institutions</li>
+            <li style={{ listStyle: "circle" }}>Worked on web application development using HTML, CSS, and JavaScript, designing a database system using SQL</li>
+            <li style={{ listStyle: "circle" }}>Worked on web application development using HTML, CSS, and JavaScript, designing a database system using SQL</li>
+          </ul>
+        </div>
+        {/* .....  cards  end  */}
+
+        <div className='box-main'>
+          <div className="box" style={{ background: 'white' }}></div>
+        </div>
+        {/* ..... image .....  */}
+        <div className='box-main1'>
+          <img className='line' src={img5} alt="newimg" />
+        </div>
+
+        <div className='box-main'>
+          <div className="box" style={{ background: 'white' }}></div>
+        </div>
+        {/* .....  cards  */}
+        <div className="new-card2" >
+          <h2>Rajkiya Inter College Sah Madhyamik Vidyalaya | BSEB</h2>
+          <h3>Science stream in Higher Secondary Certificate (HSC) in India | 2017 - 2019</h3>
+
+        </div>
+        {/* .....  cards  end  */}
+        {/* ..... image .....  */}
+        <div className='box-main1'>
+          <img className='line' src={img6} alt="newimg" />
+        </div>
+
+      </div>
+
+
+      {/* ..........  E X P E R I A N C E   --------------------------   */}
       <div className='about-me' id='about'>
         <span>Experience</span>
         <div><img className='line' src={img4} alt="newimg" />
@@ -151,22 +201,46 @@ const Body = () => {
           <img className='line' src={img5} alt="newimg" />
         </div>
         {/* .....  cards  */}
-        <div className="card new-card" style={{width: '18rem'}}>
-          <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <h6 className="card-subtitle mb-2 text-muted">Card subtitle</h6>
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="/" className="card-link">Card link</a>
-            <a href="/" className="card-link">Another link</a>
-          </div>
+        <div className="new-card" >
+          <h2>Dayananda Sagar Institutions -Bangalore</h2>
+          <h3>B.E. Information Technology | 2020 - 2024</h3>
+          <ul >
+            <li style={{ listStyle: "circle" }}>Pursuing IT Engineering course from Dayananda Sagar Institutions</li>
+            <li style={{ listStyle: "circle" }}>Worked on web application development using HTML, CSS, and JavaScript, designing a database system using SQL</li>
+            <li style={{ listStyle: "circle" }}>Worked on web application development using HTML, CSS, and JavaScript, designing a database system using SQL</li>
+          </ul>
         </div>
-        {/* .....  cards ends  */}
+        {/* .....  cards  end  */}
 
         <div className='box-main'>
           <div className="box" style={{ background: 'white' }}></div>
         </div>
+        {/* ..... image .....  */}
+        <div className='box-main1'>
+          <img className='line' src={img5} alt="newimg" />
+        </div>
+
+        <div className='box-main'>
+          <div className="box" style={{ background: 'white' }}></div>
+        </div>
+        {/* .....  cards  */}
+        <div className="new-card2" >
+          <h2>Rajkiya Inter College Sah Madhyamik Vidyalaya | BSEB</h2>
+          <h3>Science stream in Higher Secondary Certificate (HSC) in India | 2017 - 2019</h3>
+
+        </div>
+        {/* .....  cards  end  */}
+        {/* ..... image .....  */}
+        <div className='box-main1'>
+          <img className='line' src={img6} alt="newimg" />
+        </div>
 
       </div>
+      {/* ...................   D O N E  ....................  E X P E R I A N C E   -----------   */}
+
+
+      {/* .....................................   F O O T E R     S E C T I O N    -----------   */}
+
 
     </>
   )

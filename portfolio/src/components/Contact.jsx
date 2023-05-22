@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import './Footer_Contact.css'
-
+import img1 from '../image/contact.png'
 const Contact = () => {
   const form = useRef();
 
@@ -19,21 +19,33 @@ const Contact = () => {
   };
 
   return (
-<div className="new-contact">
-Contact Me
-Get in touch
-My inbox is always open. Whether you have a question or just want to say hello, I will try my best to get back to you!
-      <form className='div1-contact' ref={form} onSubmit={sendEmail}>
-        <label>Name</label>
+    <div className="new-contact">
+      <div className='contact1'>
+        <h1 style={{fontSize:'42px'}}> Contact Me</h1>
+        <h3 style={{fontSize:'25px',     color: 'rgb(211 152 193)'}}>Get in touch</h3>
+        <h4 style={{fontSize:'13px' ,color:" #d12222"}}>
+          My inbox is always open. Whether you have a question or just want to say hello, I will try my best to get back to you!
+        </h4>
+      </div>
+  
+        <div className='contact2'>
+          <img src={img1} alt="connect" style={{ width: '400px' }} />
+        </div>
+        <div className='contact3'>
+        <form className='div1-contact' ref={form} onSubmit={sendEmail}>
+          <label>Name</label>
           <input type="text" name="from_name" />
-         <label>Email</label>
+          <label>Email</label>
           <input type="email" name="message" />
           <label>Message</label>
           <textarea name="message" />
+          <input type="submit" value="Send" />
+        </form>
+        </div>
 
-        <input type="submit" value="Say Hallo {TbHeartHandshake}"  />
-      </form>
-      </div>
+      
+
+    </div>
 
   );
 };

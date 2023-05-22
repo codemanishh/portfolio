@@ -1,3 +1,10 @@
+.proj-flex{
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 67px;
+    justify-content: center;
+}
 .card {
  width: 190px;
  height: 254px;
