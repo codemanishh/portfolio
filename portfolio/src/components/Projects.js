@@ -11,7 +11,7 @@ const Projects = (props) => {
           <div className="card-info">
 
             <div className="card-title">{value.title}</div>
-            <div className="card-subtitle">{value.about}</div>
+            {/* <div className="card-subtitle">{value.about}</div> */}
           </div>
 
 

@@ -7,6 +7,8 @@ import img3 from '../image/NW.png'
 import img4 from '../image/line.png'
 import img5 from '../image/education.png'
 import img6 from '../image/AILWING.png'
+
+
 import Ocard from './SlillCards/O_Cards.jsx'
 import O_carddata from './SlillCards/O_CardsData'
 import Bcard from './SlillCards/B_Cards'
@@ -242,9 +244,10 @@ const Body = () => {
       {/* .....................................   F O O T E R     S E C T I O N    -----------   */}
 
 
+
     </>
   )
 }
-
+ 
 export default Body
 

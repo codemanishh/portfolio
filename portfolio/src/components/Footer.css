@@ -1,0 +1,20 @@
+.footer-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 800px;
+    background-color: #383838;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 25px;
+}
+.footer-images{
+    display:flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.footer-text{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}

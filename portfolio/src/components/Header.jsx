@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Header.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link, NavLink } from "react-router-dom";
+import img1 from './SlillCards/img/nodejs.png'
 
 const Header = () => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);
@@ -10,10 +11,7 @@ const Header = () => {
       <nav className="main-nav">
         {/* 1st logo part  */}
         <div className="logo">
-          <h2>
-            <span>M</span>anish
-            <span>K</span>umar
-          </h2>
+         <img src={img1} style={{width:'30px'}} alt="" />
         </div>
 
         {/* 2nd menu part  */}
@@ -23,13 +21,13 @@ const Header = () => {
           }>
           <ul>
             <li>
-              <NavLink to="/">Home</NavLink>
+              <NavLink to="/" href="#home" >Home</NavLink>
             </li>
             <li>
               <a href="#projects">Projects</a>
             </li>
             <li>
-              <a href="#about" style={{scrollBehavior: 'smooth'}}>About me</a>
+              <a href="#about" >About me</a>
             </li>
             <li>
               <NavLink to="/contact">contact</NavLink>
