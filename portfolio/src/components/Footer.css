@@ -18,3 +18,17 @@
     text-align: center;
     justify-content: center;
 }
+.footer-text2{
+color: #00d0ffba;
+font-weight: bolder;
+}
+@media screen and (max-width: 600px) {
+.footer-main{
+    gap: 22px;
+}
+}
+@media screen and (max-width: 1000px) {
+    .footer-main{
+    gap: 22px;
+}
+}

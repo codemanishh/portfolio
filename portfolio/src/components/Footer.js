@@ -9,7 +9,7 @@ const Footer = () => {
     <>
       <div className='footer-main'>
         <div className='footer-text'>
-          <span>Made with ❤️ by </span><span>Manish Kumar</span>
+         <p> Made with ❤️ by  <span className='footer-text2'> Manish Kumar </span></p>
         </div>
         <div className='footer-images'>
           <img src={img7} style={{ width: '23px' }} alt="React js" />

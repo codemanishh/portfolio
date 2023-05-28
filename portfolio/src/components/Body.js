@@ -8,7 +8,6 @@ import img4 from '../image/line.png'
 import img5 from '../image/education.png'
 import img6 from '../image/AILWING.png'
 
-
 import Ocard from './SlillCards/O_Cards.jsx'
 import O_carddata from './SlillCards/O_CardsData'
 import Bcard from './SlillCards/B_Cards'
@@ -24,7 +23,7 @@ import { Link } from "react-router-dom";
 const Body = () => {
   return (
     <>
-      <div className='main-class'>
+      <div id="home" className='main-class'>
         <ul className="social-media-desktop-a">
           <li>
             <a
@@ -103,22 +102,28 @@ const Body = () => {
         <div><img className='line' src={img4} alt="newimg" /></div>
       </div>
 
-
+      {/* ..............................    */}
       <div className='tech-stacks'>
         <div className='front-end'>
           <p>FrontEnd</p>
-          <Fcard details={F_carddata} />
+          <div className='font-end_1'>
+            <Fcard details={F_carddata} />
+          </div>
         </div>
         <div className='backend'>
           <p>Backend</p>
-          <Bcard details={B_carddata} />
+          <div className="backend_1">
+            <Bcard details={B_carddata} />
+          </div>
         </div>
         <div className='other-tech'>
           <p>Other Skills</p>
-          <Ocard details={O_carddata} />
+          <div className="other-tech_1">
+            <Ocard details={O_carddata} />
+          </div>
         </div>
       </div>
-
+      {/* ...................   ................. */}
       <div className='about-me' id='about'>
         <span>Projects</span>
         <div><img className='line' src={img4} alt="newimg" />
@@ -127,18 +132,15 @@ const Body = () => {
       <div id='projects' className='project-all'>
         <div className='proj-new'>
           <Cardd details={carddata} />
-
         </div>
       </div>
-{/* ...................  EDUACTION --------------------------   */}
+      {/* ...................  EDUACTION --------------------------   */}
       <div className='about-me' id='about'>
         <span>Education</span>
         <div><img className='line' src={img4} alt="newimg" />
         </div>
       </div>
 
-
-
       <div className='parenttoall'>
         <div className='box-main'>
           <div className="box" style={{ background: 'white' }}></div>
@@ -158,7 +160,6 @@ const Body = () => {
           </ul>
         </div>
         {/* .....  cards  end  */}
-
         <div className='box-main'>
           <div className="box" style={{ background: 'white' }}></div>
         </div>
@@ -174,25 +175,22 @@ const Body = () => {
         <div className="new-card2" >
           <h2>Rajkiya Inter College Sah Madhyamik Vidyalaya | BSEB</h2>
           <h3>Science stream in Higher Secondary Certificate (HSC) in India | 2017 - 2019</h3>
-
         </div>
-        {/* .....  cards  end  */}
-        {/* ..... image .....  */}
+        {/* .....   cards     end  */}
+        {/* ....... image ........ */}
         <div className='box-main1'>
           <img className='line' src={img6} alt="newimg" />
         </div>
-
       </div>
 
 
       {/* ..........  E X P E R I A N C E   --------------------------   */}
       <div className='about-me' id='about'>
-        <span>Experience</span>
-        <div><img className='line' src={img4} alt="newimg" />
+        <span>Tranings </span>
+        <div>
+          <img className='line' src={img4} alt="newimg" />
         </div>
       </div>
-
-
 
       <div className='parenttoall'>
         <div className='box-main'>
@@ -204,12 +202,11 @@ const Body = () => {
         </div>
         {/* .....  cards  */}
         <div className="new-card" >
-          <h2>Dayananda Sagar Institutions -Bangalore</h2>
-          <h3>B.E. Information Technology | 2020 - 2024</h3>
+          <h2>IIT Kharagpur (NPTEL)</h2>
+          <h3>Elite+Silver Certificate</h3>
           <ul >
-            <li style={{ listStyle: "circle" }}>Pursuing IT Engineering course from Dayananda Sagar Institutions</li>
-            <li style={{ listStyle: "circle" }}>Worked on web application development using HTML, CSS, and JavaScript, designing a database system using SQL</li>
-            <li style={{ listStyle: "circle" }}>Worked on web application development using HTML, CSS, and JavaScript, designing a database system using SQL</li>
+            <li style={{ listStyle: "circle" }}>Problem Solving</li>
+            <li style={{ listStyle: "circle" }}>C- programming</li>
           </ul>
         </div>
         {/* .....  cards  end  */}
@@ -227,8 +224,9 @@ const Body = () => {
         </div>
         {/* .....  cards  */}
         <div className="new-card2" >
-          <h2>Rajkiya Inter College Sah Madhyamik Vidyalaya | BSEB</h2>
-          <h3>Science stream in Higher Secondary Certificate (HSC) in India | 2017 - 2019</h3>
+          <h2>PWSKILLS / INEURON </h2>
+          <h3>Full Stack JavaScript Developement</h3>
+          <li>ReactJS</li>
 
         </div>
         {/* .....  cards  end  */}
@@ -248,6 +246,6 @@ const Body = () => {
     </>
   )
 }
- 
+
 export default Body
 

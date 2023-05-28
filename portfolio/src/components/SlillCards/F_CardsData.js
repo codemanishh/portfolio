@@ -1,7 +1,7 @@
 import img1 from './img/js.png'
 import img2 from './img/reactjs.png'
 import img3 from './img/redux.png'
-import img4 from './img/mui.png'
+// import img4 from './img/mui.png'
 import img5 from './img/html.png'
 import img6 from './img/css.png'
 import img7 from './img/BOOTSTRAPE.png'
@@ -22,11 +22,11 @@ const F_CardsData =[
         title:'Redux',
         level:'bignner'
     },
-    {
-        img:img4,
-        title:'Material-UI',
-        level:'bignner'
-    },
+    // {
+    //     img:img4,
+    //     title:'Material-UI',
+    //     level:'bignner'
+    // },
     {
         img:img5,
         title:'HMTL5',

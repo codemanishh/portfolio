@@ -38,12 +38,15 @@
 
 /*Card footer*/
 .card-social {
- transform: translateY(200%);
- display: flex;
- justify-content: space-around;
- width: 100%;
- opacity: 0;
- transition: transform .2s ease, opacity .2s ease;
+  transform: translateY(200%);
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    opacity: 0;
+    transition: transform .2s ease, opacity .2s ease;
+    background-color: #ffffff;
+    padding: 12px;
+    height: 43px;
 
 }
 

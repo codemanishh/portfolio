@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Header.css";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import img1 from './SlillCards/img/nodejs.png'
 
 const Header = () => {
@@ -21,7 +21,7 @@ const Header = () => {
           }>
           <ul>
             <li>
-              <NavLink to="/" href="#home" >Home</NavLink>
+              <a href="#home"  >Home</a>
             </li>
             <li>
               <a href="#projects">Projects</a>
@@ -30,7 +30,7 @@ const Header = () => {
               <a href="#about" >About me</a>
             </li>
             <li>
-              <NavLink to="/contact">contact</NavLink>
+              <a href="#contact1">contact</a>
             </li>
           </ul>
         </div>

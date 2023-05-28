@@ -2,7 +2,6 @@ import React from 'react'
 import '../skill.css'
 const F_Cards = (props) => {
   return (
-
     <>
         {props.details.map((value,index)=>(
              <div className='skill-div' key={index}>
@@ -18,5 +17,4 @@ const F_Cards = (props) => {
     </>
   )
 }
-
 export default F_Cards

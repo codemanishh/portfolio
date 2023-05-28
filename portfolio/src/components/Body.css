@@ -1,5 +1,7 @@
 * {
   font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
 }
 .social-media-desktop-a {
   display: flex;
@@ -97,6 +99,10 @@
 }
 
 @media screen and (max-width: 600px) {
+  .links{
+    display:flex;
+    flex-direction:column;
+  }
   .main-class {
     width: var(--container-width-sm);
   }
@@ -139,7 +145,7 @@
   justify-content: center;
 }
 .boy-1 {
-  width: 430px;
+  width:42%;
 }
 
 .about-me {
@@ -204,6 +210,9 @@
 }
 
 @media screen and (max-width: 600px) {
+  .line{
+    width:12%;
+  }
   .photo-1 {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -227,29 +236,54 @@
     width: 201px;
     margin-top: 40px;
     margin-left: -20px;
-    /* visibility: hidden; */
   }
 }
 
 /* ............. TEACH STACK SECTION .....  */
 
 .tech-stacks {
-  display: grid;
-  grid-template-columns: 0.1fr repeat(3, 1fr) 0.1fr;
-  grid-template-rows: 0.1fr 1fr 0.1fr;
-  grid-column-gap: 8px;
-  grid-row-gap: 8px;
-  background-color: #18191e;
-}
+  display: flex;
+    flex-direction: column;
+    background-color: #18191e;
+    align-items: center;
+    gap: 48px;
+    padding: 49px;
+  }
+
+
 .front-end {
-  grid-area: 2 / 2 / 3 / 3;
+ display: flex;
+ flex-direction: column;
+ align-items: center;    gap: 19px;
+}
+.font-end_1{
+  display: flex;
+    flex-direction: row;    gap: 27px;
+    flex-wrap: wrap;
 }
 .backend {
-  grid-area: 2 / 3 / 3 / 4;
+  display: flex;
+ align-items: center;
+ flex-direction: column;    gap: 19px;
+}
+.backend_1 {
+  display: flex;
+ flex-direction: row;    gap: 27px;
+    flex-wrap: wrap;
 }
 .other-tech {
-  grid-area: 2 / 4 / 3 / 5;
+  display: flex;
+ align-items: center;
+ flex-direction: column;    gap: 19px;
 }
+.other-tech_1 {
+  display: flex;
+ flex-direction: row;    gap: 27px;
+    flex-wrap: wrap;
+}
+
+
+
 .front-end,
 .backend,
 .other-tech p {
@@ -301,7 +335,7 @@
     position: absolute;
     top: 91px;
     left: 172px;
-    width: 378px;
+    width: 26%;
     color:#000000;
    
     backdrop-filter: blur(10px); background-color: rgba(255, 255, 255, 1); border-radius: 20px; box-shadow: 35px 35px 68px 0px rgba(145, 192, 255, 0.5), inset -4px -4px 16px 0px rgba(145, 192, 255, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
@@ -311,9 +345,32 @@
     position: absolute;
     top: 392px;
     right: 172px;
-    width: 378px;
+    width: 26%;
     color:#000000;
    
     backdrop-filter: blur(10px); background-color: rgba(255, 255, 255, 1); border-radius: 20px; box-shadow: 35px 35px 68px 0px rgba(145, 192, 255, 0.5), inset -4px -4px 16px 0px rgba(145, 192, 255, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
     padding: 23px;
   }
+@media screen and (max-width: 600px) {
+  .box-main,.box-main1{
+  justify-content: left;
+    margin-left: 16px;
+ }
+ .new-card{
+  left: 88px;
+    top: 135px;
+    width:75%;
+
+
+ }
+ .new-card2{
+  left: 88px;
+  top: 408px;
+    width:75%;
+
+ }
+ 
+
+
+
+}
