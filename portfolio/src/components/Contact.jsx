@@ -26,20 +26,21 @@ const Contact = () => {
           My inbox is always open. Whether you have a question or just want to say hello, I will try my best to get back to you!
         </h4>
       </div>
-
-      <div className='contact2'>
-        <img src={img1} alt="connect" style={{ width: '50%' }} />
-      </div>
-      <div className='contact3'>
-        <form className='div1-contact' ref={form} onSubmit={sendEmail}>
-          <label>Name</label>
-          <input type="text" name="from_name" />
-          <label>Email</label>
-          <input type="email" name="message" />
-          <label>Message</label>
-          <textarea name="message" />
-          <input type="submit" value="Send" />
-        </form>
+      <div className="main-container">
+        <div className='contact2'>
+          <img src={img1} alt="connect" style={{ width: '50%' }} />
+        </div>
+        <div className='contact3'>
+          <form className='div1-contact' ref={form} onSubmit={sendEmail}>
+            <label>Name</label>
+            <input type="text" name="from_name" required />
+            <label>Email</label>
+            <input type="email" name="message" required />
+            <label>Message</label>
+            <textarea name="message" required />
+            <input type="submit" value="Send"  />
+          </form>
+        </div>
       </div>
 
 
