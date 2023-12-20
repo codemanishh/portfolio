@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Body.css";
-import { FaGithub, FaInstagram, FaYoutube, FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaYoutube, FaExternalLinkAlt, FaTelegramPlane } from "react-icons/fa";
 import img1 from '../image/profile-pic.png'
 import img2 from '../image/main-style-1.png'
 import img3 from '../image/NW.png'
@@ -29,12 +29,19 @@ const Body = () => {
             <a
               href="https://github.com/codemanishh"
               target="_thapa">
-              <FaGithub className="facebook logo-s" />
+              <FaGithub className="GithubIcon logo-s" />
             </a>
           </li>
           <li>
             <a
-              href="https://www.instagram.com/language__c/"
+              href="https://t.me/cpwithmanish"
+              target="_thapa">
+              <FaTelegramPlane className="Telegram logo-s" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/codemanishh/"
               target="_thapa">
               <FaInstagram className="instagram logo-s" />
             </a>
@@ -53,7 +60,7 @@ const Body = () => {
             <div className='name-two'>Manish Kumar</div>
             <div className='name-three'>FrontEnd Developer</div>
             <p>I focus on developing user-friendly web applications that meet the client's requirements, with attention to detail, scalability, and performance.</p>
-            <div className='links'> <Link to="https://www.canva.com/design/DAFUqnQ8La4/7sCFNB12fpyKZE6ASxkSOQ/edit?utm_content=DAFUqnQ8La4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target='none' ><button>Resume</button></Link>
+            <div className='links'> <Link to="https://drive.google.com/drive/folders/1dbydsqXiwd_BwZzuLCFqsQiMs20ewgRa?usp=sharing" target='none' ><button>Resume</button></Link>
               <Link to="https://topmate.io/manish_kumar47" target='none' ><button style={
                 {
                   backgroundColor: 'white',
@@ -82,7 +89,7 @@ const Body = () => {
           <h2>Manish Kumar</h2>
           <h4>FrontEnd Developer</h4>
           <p>I am a FrontEnd developer based in Bangalore, India. I'm an Information Technology undergraduate from DSI, and my journey in web development began during my second year of college. I'm passionate about creating beautiful, functional, and user-friendly websites and applications, and I'm constantly pushing myself to learn and grow as a developer. Love building full-stack clones and side projects.</p>
-          <div className='links'> <Link to="https://www.canva.com/design/DAFUqnQ8La4/7sCFNB12fpyKZE6ASxkSOQ/edit?utm_content=DAFUqnQ8La4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target='none' ><button>Resume</button></Link>
+          <div className='links'> <Link to="https://drive.google.com/drive/folders/1dbydsqXiwd_BwZzuLCFqsQiMs20ewgRa?usp=sharing" target='none' ><button>Resume</button></Link>
             <Link to="https://topmate.io/manish_kumar47" target='none' ><button style={
               {
                 backgroundColor: 'white',
