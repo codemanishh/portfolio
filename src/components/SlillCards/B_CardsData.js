@@ -7,23 +7,23 @@ const O_CardsData = [
     {
         img: img1,
         title: 'NodeJS',
-        level: 'bignner'
+        level: 'beginner '
     },
     {
         img: img2,
         title: 'Expressjs',
-        level: 'bignner'
+        level: 'beginner '
     },
 
     {
         img: img3,
         title: 'MongoDB',
-        level: 'bignner'
+        level: 'Intermediate '
     },
     {
         img: img4,
         title: 'FireBase',
-        level: 'bignner'
+        level: 'Intermediate '
     },
     {
         img: img5,

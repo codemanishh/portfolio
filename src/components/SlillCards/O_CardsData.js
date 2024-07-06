@@ -28,7 +28,7 @@ const O_CardsData = [
     {
         img: img5,
         title: 'Python',
-        level: 'bignner'
+        level: 'beginner '
     },
 
     {

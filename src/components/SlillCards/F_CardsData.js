@@ -20,7 +20,7 @@ const F_CardsData = [
     {
         img: img3,
         title: 'Redux',
-        level: 'bignner'
+        level: 'beginner '
     },
     {
         img: img4,

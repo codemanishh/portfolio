@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Body.css";
-import { FaGithub, FaInstagram, FaYoutube, FaExternalLinkAlt, FaTelegramPlane } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram, FaExternalLinkAlt } from "react-icons/fa";
 import img1 from '../image/profile-pic.png'
 import img2 from '../image/main-style-1.png'
 import img3 from '../image/NW.png'
@@ -16,6 +16,7 @@ import Fcard from './SlillCards/F_Cards.jsx'
 import F_carddata from './SlillCards/F_CardsData'
 import Cardd from './Projects'
 import carddata from './ProjectsData.jsx'
+import Certificate from './certifications/Certificate.jsx';
 
 
 import { Link } from "react-router-dom";
@@ -34,9 +35,9 @@ const Body = () => {
           </li>
           <li>
             <a
-              href="https://t.me/cpwithmanish"
+              href="https://www.linkedin.com/in/codemanishh"
               target="_thapa">
-              <FaTelegramPlane className="Telegram logo-s" />
+              <FaLinkedin className="Telegram logo-s" />
             </a>
           </li>
           <li>
@@ -46,19 +47,12 @@ const Body = () => {
               <FaInstagram className="instagram logo-s" />
             </a>
           </li>
-          <li>
-            <a
-              href="https://youtu.be/A4e99gcFcPY"
-              target="_thapa">
-              <FaYoutube className="youtube logo-s" />
-            </a>
-          </li>
         </ul>
         <div className="parent">
           <div className="div1">
             <div className='name-one'>Hello I'm</div>
             <div className='name-two'>Manish Kumar</div>
-            <div className='name-three'>FrontEnd Developer</div>
+            <div className='name-three'>FullStack Developer</div>
             <p>I focus on developing user-friendly web applications that meet the client's requirements, with attention to detail, scalability, and performance.</p>
             <div className='links'> <Link to="https://drive.google.com/drive/folders/1dbydsqXiwd_BwZzuLCFqsQiMs20ewgRa?usp=sharing" target='none' ><button>Resume</button></Link>
               <Link to="https://topmate.io/manish_kumar47" target='none' ><button style={
@@ -87,8 +81,8 @@ const Body = () => {
         </div>
         <div className="about-me2">
           <h2>Manish Kumar</h2>
-          <h4>FrontEnd Developer</h4>
-          <p>I am a FrontEnd developer based in Bangalore, India. I'm an Information Technology undergraduate from DSI, and my journey in web development began during my second year of college. I'm passionate about creating beautiful, functional, and user-friendly websites and applications, and I'm constantly pushing myself to learn and grow as a developer. Love building full-stack clones and side projects.</p>
+          <h4>FullStack Developer</h4>
+          <p>I am a FullStack developer based in Bangalore, India. I'm an Information Technology graduate from DSI, and my journey in web development began during my second year of college. I'm passionate about creating beautiful, functional, and user-friendly websites and applications, and I'm constantly pushing myself to learn and grow as a developer. Love building full-stack clones and side projects.</p>
           <div className='links'> <Link to="https://drive.google.com/drive/folders/1dbydsqXiwd_BwZzuLCFqsQiMs20ewgRa?usp=sharing" target='none' ><button>Resume</button></Link>
             <Link to="https://topmate.io/manish_kumar47" target='none' ><button style={
               {
@@ -101,7 +95,11 @@ const Body = () => {
           {/* topmate.io/manish_kumar47?utm_source=topmate&utm_medium=popup&utm_campaign=Crest */}
         </div>
       </div>
-
+      {/* <div class="outterContainer">
+        <div class="container">
+          <Certificate />
+        </div>
+      </div> */}
 
 
       <div className='about-me' id='about'>
@@ -161,7 +159,7 @@ const Body = () => {
           <h2>Dayananda Sagar Institutions -Bangalore</h2>
           <h3>B.E. Information Technology | 2020 - 2024</h3>
           <ul >
-            <li style={{ listStyle: "circle" }}>Pursuing IT Engineering course from Dayananda Sagar Institutions</li>
+            <li style={{ listStyle: "circle" }}>Completed Bachelor of Engineering course from Dayananda Sagar Institutions with CGPA (8.03)</li>
             <li style={{ listStyle: "circle" }}>Worked on web application development using HTML, CSS, and JavaScript, designing a database system using SQL</li>
             <li style={{ listStyle: "circle" }}>Worked on web application development using HTML, CSS, and JavaScript, designing a database system using SQL</li>
           </ul>
