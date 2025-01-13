@@ -52,7 +52,7 @@ const Body = () => {
           <div className="div1">
             <div className='name-one'>Hello I'm</div>
             <div className='name-two'>Manish Kumar</div>
-            <div className='name-three'>Software Engineer- 1 @KANTAR</div>
+            <div className='name-three'>Software Engineer- 1 @KANTAR bangalore</div>
             <p>I focus on developing user-friendly web applications that meet the client's requirements, with attention to detail, scalability, and performance.</p>
             <div className='links'> <Link to="https://drive.google.com/drive/folders/1dbydsqXiwd_BwZzuLCFqsQiMs20ewgRa?usp=sharing" target='none' ><button>Resume</button></Link>
               <Link to="https://topmate.io/manish_kumar47" target='none' ><button style={
