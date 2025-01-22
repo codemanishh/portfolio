@@ -28,6 +28,9 @@ const Header = () => {
               <Link to="#" onClick={() => handleSmoothScroll('home')}>Home</Link>
             </li>
             <li>
+              <Link to="#" onClick={() => handleSmoothScroll('work')}>Work Experiance</Link>
+            </li>
+            <li>
               <Link to="#" onClick={() => handleSmoothScroll('projects')}>Projects</Link>
             </li>
             <li>
@@ -36,6 +39,7 @@ const Header = () => {
             <li>
               <Link to="#" onClick={() => handleSmoothScroll('contact1')}>Contact</Link>
             </li>
+           
           </ul>
         </div>
         <div className="social-media">

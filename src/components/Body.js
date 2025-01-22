@@ -16,10 +16,8 @@ import Fcard from './SlillCards/F_Cards.jsx'
 import F_carddata from './SlillCards/F_CardsData'
 import Cardd from './Projects'
 import carddata from './ProjectsData.jsx'
-import Certificate from './certifications/Certificate.jsx';
-
-
 import { Link } from "react-router-dom";
+import Experiance from './Experiance.jsx';
 
 const Body = () => {
   return (
@@ -244,7 +242,7 @@ const Body = () => {
       {/* ...................   D O N E  ....................  E X P E R I A N C E   -----------   */}
 
 
-      {/* .....................................   F O O T E R     S E C T I O N    -----------   */}
+  <Experiance/>
 
 
 
