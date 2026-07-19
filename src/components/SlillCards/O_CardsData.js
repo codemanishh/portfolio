@@ -1,20 +1,9 @@
-import img1 from './img/cpp.png'
 import img2 from './img/netlify.png'
 import img3 from './img/git.png';
 import img4 from './img/github.png';
-import img5 from './img/py.png'
-import img6 from './img/canva.png'
+import imgADF from './img/azure-data-factory.png'
+import img7 from './img/sql.png'
 const O_CardsData = [
-    {
-        img: img1,
-        title: 'C++',
-        level: 'Intermediate'
-    },
-    {
-        img: img2,
-        title: 'Netlify',
-        level: 'Advance'
-    },
     {
         img: img3,
         title: 'Git',
@@ -26,16 +15,34 @@ const O_CardsData = [
         level: 'Intermediate'
     },
     {
-        img: img5,
-        title: 'Python',
-        level: 'beginner '
+        img: imgADF,
+        title: 'Azure Data Factory',
+        level: 'Intermediate'
     },
-
     {
-        img: img6,
-        title: 'CANVA',
+        img: img7,
+        title: 'Azure SQL Database',
+        level: 'Intermediate'
+    },
+    {
+        img: img7,
+        title: 'SSMS',
+        level: 'Intermediate'
+    },
+    {
+        img: img7,
+        title: 'SSIS',
+        level: 'Intermediate'
+    },
+    {
+        img: img2,
+        title: 'Netlify',
         level: 'Advance'
     },
-
+    {
+        img: img2,
+        title: 'VS Code',
+        level: 'Advance'
+    }
 ]
 export default O_CardsData;

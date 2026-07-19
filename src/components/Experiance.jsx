@@ -2,69 +2,69 @@ import React, { Component } from 'react'
 import "./Body.css";
 import img4 from '../image/line.png'
 
-import img6 from '../image/AILWING.png'
-import img7 from '../image/job-logo.png'
-
 
 export default class Experiance extends Component {
   render() {
+    const API_KEY = "pk_NwK3F5Q-SjKCp6gfRQOF4A";
+
     return (
       <>
-       <div className='work' id='about'>
-        <span>Working Experiance </span>
+       <div className='about-me' id='work'>
+        <span>Work Experience</span>
         <div>
           <img className='line' src={img4} alt="newimg" />
         </div>
       </div>
 
-      <div className='parenttoall'>
-        <div className='box-main'>
-          <div className="box" style={{ background: 'white' }}></div>
-        </div>
-        {/* ..... image .....  */}
-        <div className='box-main1'>
-          <img className='line' src={img7} alt="newimg" />
-        </div>
-        {/* .....  cards  */}
-        <div className="new-card" >
-          <h2>KANTAR - Bangalore IN</h2>
-          <h3>Software Engineer - 1 &nbsp;&nbsp;||&nbsp;&nbsp; July 2024 - Present </h3>
-          
-          <ul >
-            <li style={{ listStyle: "circle" }}><bold>Tech Stacks -</bold>  MVC / C# / SQL / Razor Pages / ASP.NET / JavaScript / CSS / HTML / Python (api) </li>
-            <li style={{ listStyle: "circle" }}>Boosted resource use by 30% with dynamic tracking and reporting.</li>
-            <li style={{ listStyle: "circle" }}>Ensured error-free UI deployments via Azure pipelines.</li>
-            <li style={{ listStyle: "circle" }}>Built APIs, Angular apps, and optimized Elasticsearch.</li>
-          </ul>
-        </div>
-        {/* .....  cards  end  */}
+      <div className="timeline-container">
+        <div className="timeline-wrapper">
+          <div className="timeline-item left">
+            <div className="timeline-dot">
+              <img src={`https://img.logo.dev/kantar.com?token=${API_KEY}`} alt="Kantar logo" />
+            </div>
+            <div className="timeline-card">
+              <h2>Kantar Analytics India - Bengaluru</h2>
+              <h3>Software Engineer &nbsp;&nbsp;||&nbsp;&nbsp; July 2024 - Present</h3>
+              <ul>
+                <li><strong>Tech Stack -</strong> SQL Server, Oracle SQL, PL/SQL, ASP.NET MVC, Azure Data Factory, Azure Functions, Python, SSIS, REST APIs</li>
+                <li>Built and optimized SQL queries, stored procedures, views, and schemas for reporting and business logic.</li>
+                <li>Developed an automated ETL pipeline using Azure Data Factory, Azure Functions, and Python for analytics-ready data delivery.</li>
+                <li>Enhanced a Governance Input Portal and Skill Management Platform with role-based access and reliable workflows.</li>
+              </ul>
+            </div>
+          </div>
 
-        <div className='box-main'>
-          <div className="box" style={{ background: 'white' }}></div>
-        </div>
-        {/* ..... image .....  */}
-        <div className='box-main1'>
-          <img className='line' src={img7} alt="newimg" />
-        </div>
+          <div className="timeline-item right">
+            <div className="timeline-dot">
+              <img src={`https://img.logo.dev/ineuron.ai?token=${API_KEY}`} alt="INeuron.ai logo" />
+            </div>
+            <div className="timeline-card">
+              <h2>INeuron.ai - Bangalore</h2>
+              <h3>Frontend Developer Intern &nbsp;&nbsp;||&nbsp;&nbsp; Aug 2023 - Nov 2023</h3>
+              <ul>
+                <li><strong>Tech Stack -</strong> React.js, JavaScript, HTML, CSS, REST APIs</li>
+                <li>Gained experience in the software development lifecycle, product thinking, and user experience design.</li>
+                <li>Built a responsive front-end experience using modern web technologies.</li>
+              </ul>
+            </div>
+          </div>
 
-        <div className='box-main'>
-          <div className="box" style={{ background: 'white' }}></div>
+          <div className="timeline-item left">
+            <div className="timeline-dot">
+              <img src={`https://img.logo.dev/persistent.com?token=${API_KEY}`} alt="Persistent Systems logo" />
+            </div>
+            <div className="timeline-card">
+              <h2>Persistent Systems - Remote</h2>
+              <h3>Martian Summer Internship program 2023 &nbsp;&nbsp;||&nbsp;&nbsp; Jun 2023 - Aug 2023</h3>
+              <ul>
+                <li><strong>Tech Stack -</strong> DSA, DBMS, Python, Linux</li>
+                <li>Completed intensive training and practical assignments on Data Structures, Algorithms, and Core Computer Science concepts.</li>
+                <li>Built coding proficiency in Python and Linux scripting for shell environments.</li>
+                <li>Designed schemas and wrote queries using Database Management Systems (DBMS).</li>
+              </ul>
+            </div>
+          </div>
         </div>
-        {/* .....  cards  */}
-        <div className="new-card2" >
-          <h2>INeuron.ai - Bangalore IN</h2>
-          <h3>Frontend Developer - Intern &nbsp;&nbsp;||&nbsp;&nbsp; Aug 2023 - Nov 2023</h3>
-          <li style={{ listStyle: "circle" }}><bold>Tech Stacks -</bold>ReactJs / JavaScript / CSS / HTML / API  </li>
-<li style={{ listStyle: "circle" }}> Gained experience in software development, product management, and user experience design.</li>
-<li style={{ listStyle: "circle" }}> Learned about the different stages of the software development lifecycle.</li>
-<li style={{ listStyle: "circle" }}> Created a responsive front-end using HTML, CSS, and JavaScript</li>
-        </div>
-        {/* .....  cards  end  */}
-        {/* ..... image .....  */}
-        <div className='box-main1'>
-          <img className='line' src={img6} alt="newimg" />
-        </div>
-
       </div>
       </>
     )

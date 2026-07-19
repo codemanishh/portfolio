@@ -1,36 +1,47 @@
-import img1 from './img/nodejs.png'
-import img2 from './img/express.png'
-import img3 from './img/mongo.png'
-import img4 from './img/firebase.png'
 import img5 from './img/sql.png'
-const O_CardsData = [
+import img6 from './img/py.png'
+import imgASP from './img/aspnet.png'
+import imgOracle from './img/oracle.png'
+const B_CardsData = [
     {
-        img: img1,
-        title: 'NodeJS',
-        level: 'beginner '
+        img: img5,
+        title: 'SQL Server',
+        level: 'Intermediate'
     },
     {
-        img: img2,
-        title: 'Expressjs',
-        level: 'beginner '
-    },
-
-    {
-        img: img3,
-        title: 'MongoDB',
-        level: 'Intermediate '
-    },
-    {
-        img: img4,
-        title: 'FireBase',
-        level: 'Intermediate '
+        img: imgOracle,
+        title: 'Oracle SQL',
+        level: 'Intermediate'
     },
     {
         img: img5,
-        title: 'SQL',
+        title: 'PL/SQL',
         level: 'Intermediate'
     },
-
-
+    {
+        img: img5,
+        title: 'T-SQL',
+        level: 'Intermediate'
+    },
+    {
+        img: img6,
+        title: 'Python',
+        level: 'Intermediate'
+    },
+    {
+        img: imgASP,
+        title: 'ASP.NET MVC',
+        level: 'Intermediate'
+    },
+    {
+        img: imgASP,
+        title: '.NET Core',
+        level: 'Intermediate'
+    },
+    {
+        img: imgASP,
+        title: 'REST APIs',
+        level: 'Intermediate'
+    }
 ]
-export default O_CardsData;
+export default B_CardsData;

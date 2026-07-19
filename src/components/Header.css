@@ -7,10 +7,6 @@
   font-family: "Jost", sans-serif;
 }
 
-html {
-  font-size: 62.5%;
-}
-
 a {
   text-decoration: none;
 }
@@ -19,16 +15,31 @@ li {
   list-style: none;
 }
 
+/* Scroll offsets for fixed header */
+#home, #work, #projects, #about, #contact1 {
+  scroll-margin-top: 80px;
+}
+
+@media (max-width: 998px) {
+  #home, #work, #projects, #about, #contact1 {
+    scroll-margin-top: 70px;
+  }
+}
+
+@media (max-width: 798px) {
+  #home, #work, #projects, #about, #contact1 {
+    scroll-margin-top: 60px;
+  }
+}
 
 .main-nav {
   width: 100%;
-    height: 8rem;
-    display: grid;
-    grid-template-columns: 12rem 1fr 2fr 1fr 9rem;
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
-    background-color: #18191e;
-    position: fixed;
-    z-index: 100;
+  height: 80px;
+  display: grid;
+  grid-template-columns: 120px 1fr 2fr 1fr 90px;
+  background-color: #18191e;
+  position: fixed;
+  z-index: 100;
 }
 
 .logo {
@@ -43,7 +54,7 @@ li {
 }
 
 .menu-link ul {
-  height: 10rem;
+  height: 80px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -54,7 +65,7 @@ li {
 }
 
 .social-media ul {
-  height: 10rem;
+  height: 80px;
   display: grid;
   grid-template-columns: 3fr repeat(3, 1fr);
   align-items: center;
@@ -69,9 +80,8 @@ li {
   grid-column: 2/3;
 }
 
-
 .logo h2 {
-  font-size: 2.5rem;
+  font-size: 25px;
   font-weight: 400;
   text-transform: uppercase;
   background: -webkit-linear-gradient(#eee, rgb(69, 57, 248));
@@ -80,11 +90,11 @@ li {
 }
 
 .logo h2 span {
-  font-size: 3.5rem;
+  font-size: 35px;
 }
 
 .menu-link ul li {
-  font-size: 1.8rem;
+  font-size: 18px;
 }
 
 .menu-link ul li a {
@@ -100,7 +110,7 @@ li {
 }
 
 .social-media ul li {
-  font-size: 1.8rem;
+  font-size: 18px;
 }
 
 .social-media .hamburger-menu {
@@ -130,12 +140,12 @@ li {
 }
 
 .hero-section p {
-  font-size: 3rem;
+  font-size: 30px;
   text-transform: capitalize;
 }
 
 .hero-section h1 {
-  font-size: 5rem;
+  font-size: 50px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -143,22 +153,22 @@ li {
 /* responsive css style  */
 @media (max-width: 1080px) {
   .main-nav {
-    height: 8rem;
-    grid-template-columns: 2rem 3fr 3fr 1fr 2rem;
+    height: 80px;
+    grid-template-columns: 20px 3fr 3fr 1fr 20px;
   }
 
   .logo,
   .menu-link ul,
   .social-media ul {
-    height: 8rem;
+    height: 80px;
   }
 }
 
 /* responsive css style  */
 @media (max-width: 998px) {
   .main-nav {
-    height: 7rem;
-    grid-template-columns: 2rem 2fr 3fr 2rem 2rem;
+    height: 70px;
+    grid-template-columns: 20px 2fr 3fr 20px 20px;
   }
 
   .menu-link {
@@ -167,7 +177,7 @@ li {
 
   .logo,
   .social-media ul {
-    height: 7rem;
+    height: 70px;
   }
 
   .mobile-menu-link {
@@ -178,11 +188,11 @@ li {
 
   .mobile-menu-link {
     background-color: #2a2138;
-    height: 20rem;
+    height: 200px;
     display: grid;
     grid-column: 2/5;
     align-items: center;
-    padding-left: 3rem;
+    padding-left: 30px;
     transition: all 2s linear;
     transform-origin: top;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
@@ -190,7 +200,7 @@ li {
   }
 
   .mobile-menu-link ul {
-    height: 20rem;
+    height: 200px;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -215,7 +225,7 @@ li {
   }
 
   .social-media {
-    height: 7rem;
+    height: 70px;
     display: flex;
     justify-self: end;
     align-items: center;
@@ -223,23 +233,23 @@ li {
 
   .social-media .hamburger-menu {
     display: block;
-    font-size: 2.5rem;
+    font-size: 25px;
   }
 }
 
 @media (max-width: 798px) {
   .main-nav {
-    height: 6rem;
-    grid-template-columns: 1rem 2fr 1fr 1fr 1rem;
+    height: 60px;
+    grid-template-columns: 10px 2fr 1fr 1fr 10px;
   }
 
   .logo,
   .social-media ul {
-    height: 6rem;
+    height: 60px;
   }
 
   .social-media {
-    height: 6rem;
+    height: 60px;
     display: flex;
     justify-self: end;
     align-items: center;
@@ -247,27 +257,27 @@ li {
 
   .social-media .hamburger-menu {
     display: block;
-    font-size: 2.5rem;
+    font-size: 25px;
   }
 }
 
 @media (max-width: 520px) {
   .main-nav {
-    height: 6rem;
-    grid-template-columns: 1rem 4fr 1fr 1fr 1rem;
+    height: 60px;
+    grid-template-columns: 10px 4fr 1fr 1fr 10px;
   }
 
   .logo,
   .social-media ul {
-    height: 6rem;
+    height: 60px;
   }
 
   .logo h2 {
-    font-size: 2rem;
+    font-size: 20px;
   }
 
   .social-media {
-    height: 6rem;
+    height: 60px;
     display: flex;
     justify-self: end;
     align-items: center;
@@ -275,12 +285,12 @@ li {
 
   .social-media .hamburger-menu {
     display: block;
-    font-size: 2.5rem;
+    font-size: 25px;
   }
 
   /* hero section  */
 
   .hero-section h1 {
-    font-size: 3.8rem;
+    font-size: 38px;
   }
 }

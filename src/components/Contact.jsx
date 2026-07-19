@@ -1,29 +1,15 @@
-import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import React from 'react';
 import './Contact.css'
 import img1 from '../image/contact.png'
+
 const Contact = () => {
-  const form = useRef();
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs.sendForm('service_cfwtprr', 'template_7gcyemk', form.current, 'eqtBYCIjQ840F9LKm')
-      .then((result) => {
-        console.log(result.text);
-        alert("Message Sent Successfully")
-        e.target.reset();
-      }, (error) => {
-        console.log(error.text);
-      });
-  };
-
   return (
     <div id='contact1' className="new-contact">
       <div className='contact1'>
-        <h1 style={{ fontSize: '42px' }}> Contact Me</h1>
-        <h3 style={{ fontSize: '25px', color: 'rgb(211 152 193)' }}>Get in touch</h3>
-        <h4 style={{ fontSize: '13px', color: " #d12222" }}>
-          My inbox is always open. Whether you have a question or just want to say hello, I will try my best to get back to you!
+        <h1>Contact Me</h1>
+        <h3>Get in touch</h3>
+        <h4>
+          My inbox is always open. Whether you have a question or just want to say hello, email me directly and I’ll respond quickly.
         </h4>
       </div>
       <div className="main-container">
@@ -31,22 +17,17 @@ const Contact = () => {
           <img src={img1} alt="connect" style={{ width: '50%' }} />
         </div>
         <div className='contact3'>
-          <form className='div1-contact' ref={form} onSubmit={sendEmail}>
-            <label>Name</label>
-            <input type="text" name="from_name" required />
-            <label>Email</label>
-            <input type="email" name="message" required />
-            <label>Message</label>
-            <textarea name="message" required />
-            <input type="submit" value="Send"  />
-          </form>
+          <div className='contact-link-box'>
+            <p style={{ marginBottom: '14px', fontSize: '18px', color: '#ffffff' }}>
+              Send a message directly to:
+            </p>
+            <a className='contact-email' href="mailto:devwork.mkr@gmail.com" target="_blank" rel="noreferrer">
+              devwork.mkr@gmail.com
+            </a>
+          </div>
         </div>
       </div>
-
-
-
     </div>
-
   );
 };
 

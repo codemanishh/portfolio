@@ -28,7 +28,7 @@ const Header = () => {
               <Link to="#" onClick={() => handleSmoothScroll('home')}>Home</Link>
             </li>
             <li>
-              <Link to="#" onClick={() => handleSmoothScroll('work')}>Work Experiance</Link>
+              <Link to="#" onClick={() => handleSmoothScroll('work')}>Work Experience</Link>
             </li>
             <li>
               <Link to="#" onClick={() => handleSmoothScroll('projects')}>Projects</Link>

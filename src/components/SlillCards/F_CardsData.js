@@ -1,7 +1,5 @@
 import img1 from './img/js.png'
 import img2 from './img/reactjs.png'
-import img3 from './img/redux.png'
-import img4 from './img/mui.png'
 import img5 from './img/html.png'
 import img6 from './img/css.png'
 import img7 from './img/BOOTSTRAPE.png'
@@ -18,18 +16,8 @@ const F_CardsData = [
         level: 'Intermediate'
     },
     {
-        img: img3,
-        title: 'Redux',
-        level: 'beginner '
-    },
-    {
-        img: img4,
-        title: 'Material-UI',
-        level: 'Intermediate'
-    },
-    {
         img: img5,
-        title: 'HMTL5',
+        title: 'HTML5',
         level: 'Intermediate'
     },
     {
@@ -39,15 +27,13 @@ const F_CardsData = [
     },
     {
         img: img7,
-        title: 'BOOTSTRAP',
+        title: 'Bootstrap',
         level: 'Advance'
     },
     {
         img: img8,
         title: 'Tailwind CSS',
         level: 'Advance'
-    },
-
-
+    }
 ]
 export default F_CardsData;
